@@ -58,7 +58,7 @@
 
 .text h1 {
     margin-bottom: 24px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .text h3 {
@@ -95,5 +95,66 @@
 .chill .text h3 {
     font-size: 24px;
     line-height: 1.5;
+}
+
+section{
+    display: flex;
+}
+
+.top-bottom-section {
+    width: 50%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bottom-section .image {
+    width: 100%;
+    display: flex;
+}
+
+.top-bottom-section .image img{
+    width: 100%;
+}
+
+.top-bottom-section .text {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4e9e2;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 16px;
+    color: #1e3932;
+    flex-grow: 1;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-bottom-section:first-child .section-container {
+    margin-right: 16px;
+}
+
+.top-bottom-section:last-child .section-container {
+    margin-left: 16px;
+}
+
+.top-bottom-section .text h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.top-bottom-section .text h3 {
+    font-size: 19px;
+    line-height: 1.75;
 }
 
